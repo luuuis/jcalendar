@@ -3,7 +3,9 @@
     <groupId>com.toedter</groupId>
     <artifactId>jcalendar-luuuis</artifactId>
     <version>1.3.2-SNAPSHOT</version>
-
+    <name>JCalendar</name>
+    <description>This is a fork of the JCalendar project, featuring Maven 2 and timezone support.</description>
+    
     <scm>
         <connection>scm:git:git://github.com/luuuis/jcalendar.git</connection>
         <url>scm:git:git://github.com/luuuis/jcalendar.git</url>

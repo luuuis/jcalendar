@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.toedter</groupId>
     <artifactId>jcalendar-tz</artifactId>
-    <version>1.3.2</version>
+    <version>1.3.3-SNAPSHOT</version>
     <name>JCalendar TimeZones</name>
     <description>A fork of the JCalendar project, with TimeZone support</description>
 

@@ -1,7 +1,7 @@
 <project>
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.toedter</groupId>
-    <artifactId>jcalendar-tz</artifactId>
+    <artifactId>jcalendar-luuuis</artifactId>
     <version>1.3.2-SNAPSHOT</version>
 
     <scm>

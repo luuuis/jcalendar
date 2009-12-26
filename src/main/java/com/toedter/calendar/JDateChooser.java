@@ -415,6 +415,24 @@ public class JDateChooser extends JPanel implements ActionListener,
 		}
 	}
 
+    /**
+     * Sets the calendar that is associated with this date editor's date formatter.
+     *
+     * @param calendar a Calendar
+     */
+    public void setDateFormatCalendar(Calendar calendar) {
+        dateEditor.setDateFormatCalendar(calendar);
+    }
+
+    /**
+     * Returns the calendar that is associated with this date editor's date formatter.
+     *
+     * @return a Calendar
+     */
+    public Calendar getDateFormatCalendar() {
+        return dateEditor.getDateFormatCalendar();
+    }
+
 	/**
 	 * Enable or disable the JDateChooser.
 	 * 

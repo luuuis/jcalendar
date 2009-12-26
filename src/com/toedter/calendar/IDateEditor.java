@@ -1,5 +1,5 @@
 /*
- *  Copyright (C) 2006 Kai Toedter
+ *  Copyright (C) 2007 Kai Toedter 
  *  kai@toedter.com
  *  www.toedter.com
  *
@@ -31,8 +31,8 @@ import javax.swing.JComponent;
  * interface.
  * 
  * @author Kai Toedter
- * @version $LastChangedRevision: 96 $
- * @version $LastChangedDate: 2006-05-12 18:19:35 +0200 (Fr, 12 Mai 2006) $
+ * @version $LastChangedRevision: 105 $
+ * @version $LastChangedDate: 2007-02-16 12:56:29 +0100 (Fr, 16 Feb 2007) $
  * 
  */
 public interface IDateEditor {

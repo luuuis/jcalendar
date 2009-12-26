@@ -203,9 +203,9 @@ public class JTextFieldDateEditor extends JFormattedTextField implements IDateEd
 	}
 
     /**
-     * Sets the display calendar. The display calendar is used to display dates and times in the user's calendar system.
+     * Sets the calendar that is associated with this date editor's date formatter.
      *
-     * @param calendar the display Calendar
+     * @param calendar a Calendar
      */
     public void setDateFormatCalendar(Calendar calendar) {
         dateFormatter.setCalendar(calendar != null ? calendar : Calendar.getInstance());
@@ -213,9 +213,9 @@ public class JTextFieldDateEditor extends JFormattedTextField implements IDateEd
     }
 
     /**
-     * Returns the calendar that is as
+     * Returns the calendar that is associated with this date editor's date formatter.
      *
-     * @return the display Calendar
+     * @return a Calendar
      */
     public Calendar getDateFormatCalendar() {
         return dateFormatter.getCalendar();

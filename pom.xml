@@ -171,7 +171,7 @@
                                     <goal>sign</goal>
                                 </goals>
                                 <configuration>
-                                    <keyname>8632068F</keyname>
+                                    <keyname>F3B4EA27</keyname>
                                 </configuration>
                             </execution>
                         </executions>

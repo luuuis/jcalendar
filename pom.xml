@@ -10,7 +10,8 @@
 
     <scm>
         <connection>scm:git:git://github.com/luuuis/jcalendar.git</connection>
-        <url>scm:git:git://github.com/luuuis/jcalendar.git</url>
+        <developerConnection>scm:git:git@github.com:luuuis/jcalendar.git</developerConnection>
+        <url>http://github.com/luuuis/jcalendar.git</url>
     </scm>
 
     <distributionManagement>

@@ -20,9 +20,10 @@
  */
 package com.toedter.calendar;
 
-import java.awt.BorderLayout;
-import java.awt.Font;
-import java.awt.Insets;
+import javax.swing.*;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
@@ -32,17 +33,6 @@ import java.net.URL;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
-
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.JPopupMenu;
-import javax.swing.MenuElement;
-import javax.swing.MenuSelectionManager;
-import javax.swing.SwingUtilities;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ChangeListener;
 
 /**
  * A date chooser containig a date editor and a button, that makes a JCalendar
@@ -301,23 +291,23 @@ public class JDateChooser extends JPanel implements ActionListener,
 	 * @param evt
 	 *            the event
 	 */
-	public void propertyChange(PropertyChangeEvent evt) {
-		if (evt.getPropertyName().equals("day")) {
-			if (popup.isVisible()) {
-				dateSelected = true;
-				popup.setVisible(false);
-				setDate(jcalendar.getCalendar().getTime());
-			}
-		} else if (evt.getPropertyName().equals("date")) {
-			if (evt.getSource() == dateEditor) {
-				firePropertyChange("date", evt.getOldValue(), evt.getNewValue());
-			} else {
-				setDate((Date) evt.getNewValue());
-			}
-		}
-	}
+    public void propertyChange(PropertyChangeEvent evt) {
+        if (evt.getPropertyName().equals("day")) {
+            if (popup.isVisible() && jcalendar.getCalendar().get(Calendar.MONTH) == jcalendar.monthChooser.getMonth()) {
+                dateSelected = true;
+                popup.setVisible(false);
+                setDate(jcalendar.getCalendar().getTime());
+            }
+        } else if (evt.getPropertyName().equals("date")) {
+            if (evt.getSource() == dateEditor) {
+                firePropertyChange("date", evt.getOldValue(), evt.getNewValue());
+            } else {
+                setDate((Date) evt.getNewValue());
+            }
+        }
+    }
 
-	/**
+    /**
 	 * Updates the UI of itself and the popup.
 	 */
 	public void updateUI() {
